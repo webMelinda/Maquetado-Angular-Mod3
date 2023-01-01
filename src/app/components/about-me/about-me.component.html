@@ -1,0 +1,40 @@
+<!--About me-->
+
+<section id="sobre mi" class="about me">
+    <div class="row" >
+      <div class="col-5">
+        <img [src]="persona.foto_perfil" class="w-100" alt="melindapinto foto">
+      </div>
+      <div class="col-6">
+         <app-about-edit></app-about-edit>
+        <h2><strong>Sobre mí</strong></h2>
+        <div class="divider"></div>
+        <p>{{persona.about_me}}}</p>
+      <div class="fila">
+        <div class="col">
+          <h3>Datos Personales</h3>
+          <ul>
+            <li>
+              <strong>Nombre:</strong>
+              {{persona.nombre}} {{persona.segundo_nombre}} {{persona.apellido}}
+            </li>
+            <li>
+              <strong class="color">Edad:</strong>
+              {{persona.edad}} años
+            </li>
+            <li>
+              <strong>Residencia:</strong>
+              {{persona.residencia}}
+            </li>
+            <li>
+              <strong>Email:</strong>
+              {{persona.mail}}
+            </li>
+          </ul>
+        </div>
+        <button type="button cv" class="btn btn-light">Descargar CV</button>
+      </div>
+      </div>
+      <div class="col-1"></div>
+    </div>
+  </section>

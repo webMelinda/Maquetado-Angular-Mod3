@@ -1,0 +1,36 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+          <img src="./assets/IMG/APLogo-20-20.png" alt="" width="20%" height="">
+        </a>
+        <ul class="navbar-nav" *ngFor="let contacto of red">
+          <li class="nav-item"><a class="nav-link" href={{contacto.url}} target="_blank"><i class={{contacto.icon}}></i></a></li>
+          </ul> 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Ir a
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href= "index/#sobre mi">Sobre Mí</a></li>
+                <li><a class="dropdown-item" href="index/#experiencia">Experiencia Laboral</a></li>
+                <li><a class="dropdown-item" href="index/#educacion">Educación</a></li>
+                <li><a class="dropdown-item" href="index/#habilidades">Habilidades</a></li>
+                <li><a class="dropdown-item" href="index/#proyectos">Proyectos</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <app-button-login></app-button-login>
+        <app-button-logout></app-button-logout>
+     
+</div>
+<app-login></app-login> 
+             
+ 
+
